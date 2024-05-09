@@ -136,11 +136,18 @@ ol {
 
 .content__video-card-description-container,
 .content__video-card-thumbnail {
-  width: 194px;
   height: 103px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 2px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+}
+
+.content__video-card-description-container {
+  width: 200px;
 }
 
 .content__video-card-title {
@@ -150,6 +157,9 @@ ol {
   line-height: 30px;
   margin-bottom: 6px;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -227,11 +237,19 @@ ol {
   background-color: #fff;
 }
 
-.search-form__label:hover,
-.button:hover,
-.content__card-link:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .button {
